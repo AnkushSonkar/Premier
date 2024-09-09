@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  background: #fadadd1f;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0.1px;
+  overflow: hidden;
+}
+
+#nav,
+#footer {
+  height: 10vh;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #c42e451c;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  overflow: hidden;
+}
+
+#nav > h1,
+#footer > h1 {
+  height: 100%;
+  width: 18%;
+  display: flex;
+  font-size: 2.7vw;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#nav > h1::before,
+#footer > h1::before {
+  content: "model management";
+  font-size: 12px;
+  font-weight: 100;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+}
+
+#nav > h1::after,
+#footer > h1::after {
+  content: "©️";
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  top: 18%;
+  right: 16%;
+}
+
+#nav > h2,
+#footer > h2 {
+  height: 100%;
+  width: 20%;
+  font-weight: 500;
+  font-size: 1.7vw;
+  border-right: 1.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav h2 i {
+  font-size: 1.7vw;
+}
+
+#nav h2:nth-last-child(2) {
+  width: 12%;
+  border: none;
+}
+#nav h2:nth-last-child(3) {
+  width: 30%;
+}
+
+#nav h3 {
+  display: none;
+}
+
+#center {
+  height: 80%;
+  width: 100%;
+  padding: 5vw;
+  position: relative;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 2vw 4vw;
+  color: white;
+}
+
+#over1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vw;
+  padding-bottom: 2vw;
+  border-bottom: 1.5px solid white;
+}
+
+#over1 h1 {
+  font-size: 5vw;
+}
+
+#over1 h2 {
+  font-size: 3vw;
+  padding: 1vw 1.3vw;
+  text-align: center;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  border-top: 1.5px solid rgb(192, 192, 192);
+  border-left: 1.5px solid rgb(192, 192, 192);
+}
+
+#over2 {
+  font-weight: 100;
+}
+
+#scroll {
+  height: fit-content;
+  width: 100%;
+  padding: 0 5vw 5vw;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#container {
+  display: inline-block;
+  height: 100%;
+  width: 110%;
+  overflow: hidden;
+  animation: anime 25s linear 0.5s infinite;
+}
+
+#scroll img {
+  height: 13vw;
+  width: calc(120% - 107%);
+  margin: 0 3.25vw;
+  border-radius: 50%;
+  border: 5px groove rgb(141, 141, 141);
+  object-fit: cover;
+  object-position: top;
+}
+
+@keyframes anime {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#alphabet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  background: #ffdce26b;
+  padding: 1vw 5vw;
+}
+
+#alphabet h5 {
+  font-size: 1.5vw;
+  text-decoration: underline;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+#alphabet h4 {
+  font-style: italic;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 0.5vw 0.7vw;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+
+#alphabet h4:hover {
+  border: 1px solid rgba(0, 0, 0, 0.637);
+}
+
+#page2,
+#page5 {
+  height: 100%;
+  width: 100%;
+  padding: 5vw 5vw 3vw 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page2-part1,
+#page5-part1 {
+  width: 55%;
+}
+#page2-part2,
+#page5-part2 {
+  width: 40%;
+}
+
+#page2-part1 img,
+#page5-part1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page2-part2 img,
+#page5-part2 img {
+  height: 75%;
+  width: 100%;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page-part2-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4vw;
+  padding: 2vw 0;
+}
+#page-part2-content h3 {
+  font-size: 2vw;
+}
+
+#page-part2-content p {
+  font-size: 1.2vw;
+}
+
+#center-title {
+  height: fit-content;
+  width: 100%;
+  padding: 0 5vw;
+  font-size: 3vw;
+}
+#center-title h1 {
+  font-size: 3.2vw;
+  font-weight: 800;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  padding: 3vw 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page3-left {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#page3-left h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#page3-left img {
+  height: fit-content;
+  width: 100%;
+}
+
+#page3-right {
+  height: 100%;
+  width: calc(100% - 40%);
+}
+
+#page3-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page4 {
+  height: 100%;
+  width: 100%;
+  padding: 0 5vw;
+  position: relative;
+}
+
+#page4 > h1 {
+  text-align: center;
+  padding: 1vw 5vw 4vw;
+  font-size: 3.2vw;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 0;
+  border-top: 1.5px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.elem > h3 {
+  width: 13%;
+  text-transform: uppercase;
+}
+
+.elem img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  left: 12%;
+  opacity: 0;
+  transition: all ease 1s;
+}
+
+.elem-2 {
+  width: 45%;
+}
+
+.elem-2 h1 {
+  font-size: 3.2vw;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.elem-2 h5 {
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 28%;
+}
+
+.elem:nth-last-child(1) {
+  border-bottom: 1.5px solid black;
+}
+
+#page5 {
+  flex-direction: row-reverse;
+}
+
+#marque {
+  margin-top: 2vw;
+  padding: 2vw 5vw;
+  background: #b76e796b;
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+#marque h1 {
+  font-size: 3.2vw;
+  font-family: cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  margin-right: 8px;
+  letter-spacing: 2px;
+  animation: marque-anime 4s linear 0.3s infinite;
+}
+
+@keyframes marque-anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 12px));
+  }
+}
+
+#page6 {
+  height: 100%;
+  width: 100%;
+  padding: 5vw 5vw 0;
+}
+
+#page6 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#footer {
+  height: 12vh;
+}
+
+#social {
+  width: calc(100% - 58%);
+  text-align: center;
+}
+
+#social h2 {
+  font-weight: 500;
+  font-size: 1.7vw;
+}
+
+#social-1 {
+  margin-top: 15px;
+  padding: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid black;
+}
+#social-elem i {
+  margin-right: 5px;
+  font-size: 1.7vw;
+}
+
+#social-1 h5 {
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+/* media queries for 768px */
+
+@media (max-width: 768px) {
+  #nav {
+    height: 8vh;
+    margin-top: 20px;
+  }
+
+  #nav h1 {
+    font-size: 4vw;
+  }
+
+  #nav > h1::before,
+  #footer > h1::before {
+    display: none;
+  }
+
+  #nav > h1::after,
+  #footer > h1::after {
+    display: none;
+  }
+
+  #nav > h2 {
+    display: none;
+  }
+
+  #nav h3 {
+    display: block;
+  }
+
+  #nav h3 i {
+    font-size: 4vw;
+  }
+
+  #center {
+    height: 60vh;
+  }
+
+  #alphabet h4 {
+    font-size: 1.7vw;
+    padding: 0.4vw;
+  }
+
+  #page3 {
+    height: 50vh;
+  }
+
+  #page3-left img {
+    position: absolute;
+    top: 15%;
+  }
+
+  #footer {
+    padding: 0;
+    height: 10vh;
+  }
+}
+
+/* media queries for 425px */
+@media (max-width: 425px) {
+  #nav,
+  #footer {
+    height: 6vh;
+    margin-top: 15px;
+  }
+
+  #center {
+    height: 50vh;
+  }
+
+  #page3 {
+    height: 50vh;
+  }
+
+  #social h2,
+  #social-elem i {
+    font-size: 2vw;
+  }
+
+  #social-1 {
+    margin-top: 5px;
+  }
+
+  #social-1 h5 {
+    font-size: 1.7vw;
+  }
+
+  #footer {
+    height: 6vh;
+  }
+}
